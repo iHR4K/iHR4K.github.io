@@ -1,4 +1,0 @@
-baseURL = 'https://iHR4K.github.io/'
-languageCode = 'en-us'
-title = 'Hugo Site'
-theme = "hugo-blog-awesome"
