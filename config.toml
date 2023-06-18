@@ -1,4 +1,4 @@
-title = "Awesome Hugo blog"
+title = "iHR4k Blog"
 baseURL = 'https://iHR4K.github.io/'
 
 # This is what goes in <html lang="">
@@ -84,16 +84,16 @@ disqusShortname = ''
   TileColor = "#2d89ef" # default windows 10 blue tile color
 
 [[params.socialIcons]]
-name = "linkedin"
-url = "http://www.linkedin.com/in/debanwita-mahato-8779431b8/"
+name = "twitter"
+url = "https://twitter.com/iHR4K"
 
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/iHR4K"
 
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com/iHR4K"
+name = "linkedin"
+url = "https://www.linkedin.com/in/sergei-newcastle/"
 
 [tableOfContents]
 startLevel = 2 # ToC starts from H2
