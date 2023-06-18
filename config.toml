@@ -48,7 +48,7 @@ disqusShortname = ''
     weight = 30
 
 [params]
-  sitename = "Awesome hugo blog"
+  sitename = "Welcome to the personal iHR4k blog"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
@@ -68,7 +68,7 @@ disqusShortname = ''
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "Awesome hugo blog"
   name = "Sidharth R"
-  description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog"
+  description = "Here is not too much right now - but I will be adding things about computer graphics and IT by the way"
 
 # Allow to override webmanifest options
 [params.webmanifest]
@@ -84,16 +84,16 @@ disqusShortname = ''
   TileColor = "#2d89ef" # default windows 10 blue tile color
 
 [[params.socialIcons]]
+name = "linkedin"
+url = "http://www.linkedin.com/in/debanwita-mahato-8779431b8/"
+
+[[params.socialIcons]]
 name = "github"
-url = "https://github.com/hugo-sid"
+url = "https://github.com/iHR4K"
 
 [[params.socialIcons]]
 name = "twitter"
-url = "https://twitter.com"
-
-[[params.socialIcons]]
-name = "Rss"
-url = "index.xml"
+url = "https://twitter.com/iHR4K"
 
 [tableOfContents]
 startLevel = 2 # ToC starts from H2
