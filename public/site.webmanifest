@@ -1,9 +1,9 @@
 {
-    "name": "Hugo Site",
-    "short_name": "Hugo Site",
-    "start_url": "https://iHR4K.github.io/",
+    "name": "sitename",
+    "short_name": "sitename",
+    "start_url": "/",
     "theme_color": "#434648",
-    "background_color": "#ffffff",
+    "background_color": "#fff",
     "display": "standalone",
     "icons": [
         {

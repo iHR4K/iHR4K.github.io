@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Hugo Site</title>
+    <title>Posts on iHR4k Blog</title>
     <link>https://iHR4K.github.io/posts/</link>
-    <description>Recent content in Posts on Hugo Site</description>
+    <description>Recent content in Posts on iHR4k Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Jun 2023 18:05:11 -0400</lastBuildDate><atom:link href="https://iHR4K.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Jan 2024 16:50:50 -0500</lastBuildDate><atom:link href="https://iHR4K.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post</title>
+      <title>My Sonatine</title>
+      <link>https://iHR4K.github.io/posts/january2024/</link>
+      <pubDate>Sat, 20 Jan 2024 16:50:50 -0500</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/january2024/</guid>
+      <description>Takeshi Kitano used this word as a name for his movie, one time he explained the meaning as the point of decision-making for musicians, like at some point musician should play a sonatine and make a decision about where to move forward - jazz, classic, etc
+It feels like my sonatine was a few weeks ago - it was nothing special, I just woke up as usual and realized I wanted to make a game, prove my knowledge and finally show my commitment to game dev, while I wanted to implement only tech demos, this will be a game with the release for Microsoft platform - PC and Xbox,</description>
+    </item>
+    
+    <item>
+      <title>[[Blog alloc] init]</title>
       <link>https://iHR4K.github.io/posts/post/</link>
       <pubDate>Sun, 18 Jun 2023 18:05:11 -0400</pubDate>
       
