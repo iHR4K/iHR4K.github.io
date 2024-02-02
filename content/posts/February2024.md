@@ -1,7 +1,7 @@
 ---
 title: "The first month of my new project"
 date: 2024-02-02T18:25:11-05:00
-draft: true
+draft: false
 ---
 
 So to be honest that's 3 weeks :) 
