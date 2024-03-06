@@ -1,7 +1,7 @@
 ---
 title: "Keep Normals Normal"
 date: 2024-03-05T18:25:11-05:00
-draft: true
+draft: false
 ---
 
 ![](/img/screenshot.jpg)
