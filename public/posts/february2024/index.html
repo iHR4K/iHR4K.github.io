@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | iHR4k Blog</title>
-<meta property="og:title" content="Posts | iHR4k Blog" />
-<meta name="twitter:title" content="Posts | iHR4k Blog" />
-<meta itemprop="name" content="Posts | iHR4k Blog" />
-<meta name="application-name" content="Posts | iHR4k Blog" />
+<title itemprop="name">The first month of my new project | iHR4k Blog</title>
+<meta property="og:title" content="The first month of my new project | iHR4k Blog" />
+<meta name="twitter:title" content="The first month of my new project | iHR4k Blog" />
+<meta itemprop="name" content="The first month of my new project | iHR4k Blog" />
+<meta name="application-name" content="The first month of my new project | iHR4k Blog" />
 <meta property="og:site_name" content="Welcome to the personal iHR4k blog" />
 
 <meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
@@ -32,15 +32,10 @@
     
     
     
-    <link rel="first" href="/posts/" />
-    <link rel="last" href="/posts/" />
-    
-    
-    
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2024-06-09T11:10:08-0400 />
-    <meta property="article:published_time" content=2024-06-09T11:10:08-0400 />
+    <meta property="og:article:published_time" content=2024-02-02T18:25:11-0500 />
+    <meta property="article:published_time" content=2024-02-02T18:25:11-0500 />
 
     
 
@@ -50,16 +45,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "The first month of my new project",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2024-06-09",
+        "datePublished": "2024-02-02",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  363 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2024-06-09",
+        "dateModified": "2024-02-02",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -76,9 +71,7 @@
 
     
 
-    <link rel="canonical" href="https://iHR4K.github.io/posts/">
-    <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="iHR4k Blog">
-    <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="iHR4k Blog">
+    <link rel="canonical" href="https://iHR4K.github.io/posts/february2024/">
     <link href="/style.min.41175b050032d7b140ed7b503e6724d0166055787dc68ff6fb7e4d5d7b9aebf1.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -137,7 +130,7 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/posts/">
+                    <a class="menu-link active" href="/posts/">
                         Posts
                     </a>
                     
@@ -163,129 +156,36 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2024</h2>
+        <article>
+            <header class="header">
+                <h1 class="header-title">The first month of my new project</h1>
+                
+                <div class="post-meta">
+                    <time datetime="2024-02-02T18:25:11-05:00" itemprop="datePublished"> 2 Feb 2024 </time>
+                </div>
+            </header><div class="page-content">
+                <p>So to be honest that&rsquo;s 3 weeks :)</p>
+<p>That went well, I have got some basic stuff on fake data:</p>
+<p>I added Assimp for model loading, no materials for now that&rsquo;s for the next month.</p>
+<p>Buffers creation is implemented in naive way and basic rendering w/o materials but with a special indirect buffer for them, so I have only color there now.</p>
+<p><strong>Node and transform systems</strong>: I added some prepared buffers with hardcoded count, right now 128, and I can add more later if I would need, anyway I really loved idea of handles, here is the</p>
+<p>I was thinking about something robust, OOP and at some point I realized how I mix data and operations, and how ugly it became, so Rendering Cookbook helped me to solve this (this book really a good one, check it if you have not already :) )</p>
+<p>After that I added some nodes which rotates in orbits relatively to each other to see how local/global space works, everything as expeceted.</p>
+<p><strong>Camera interactions</strong>: that was a little tricky, I found a good receipt in Sergey Kosarevskiy&rsquo;s book about camera interactions, while I love DI as a thing, that seems a little odd in pair with Handles, I prefer to use hardware manipulations directly on top of transform, anyway dumping and main code was inspired by his receipt, thank you</p>
+<p><img src="/img/img_book.jpg" alt=""></p>
+<p><strong>UI layer</strong>: There was nothing smart, I just implemented basic MVC to show scene tree and used imgui to show it</p>
+<p><strong>Import/Export</strong>: that was really interesting, while code was not hard, different types on read/write a few times took some time to debug, I never worked on scene saving before, so I really enjoyed this. In next iteration, I have to add texture arrays and dds encoding, so that will be interesting.</p>
+<p><img src="/img/jan2024.gif" alt=""></p>
+<p>In the next month, I want to do some refactoring and start the material system, I already know which BRDF I want to try.</p>
+<p>So on this note my first month has come to an end, really interesting how I have got that joy back, when you can&rsquo;t go to sleep when something doesn&rsquo;t look right, only can imagine what is awaiting me in the future</p>
 
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/june2024/">Global Illumination Research</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-06-09T11:10:08-0400">
-        9 Jun 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/may2024/">Light Probes and Ambient Occlusion</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-05-07T19:58:38-0400">
-        7 May 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/april2024/">Steps to probes</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-04-03T21:29:08-0400">
-        3 Apr 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/march2024/">Keep Normals Normal</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-03-05T18:25:11-0500">
-        5 Mar 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/february2024/">The first month of my new project</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-02-02T18:25:11-0500">
-        2 Feb 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/january2024/">My Sonatine</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-01-20T16:50:50-0500">
-        20 Jan 2024
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2023</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/post/">[[Blog alloc] init]</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2023-06-18T18:05:11-0400">
-        18 Jun 2023
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

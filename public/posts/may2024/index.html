@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | iHR4k Blog</title>
-<meta property="og:title" content="Posts | iHR4k Blog" />
-<meta name="twitter:title" content="Posts | iHR4k Blog" />
-<meta itemprop="name" content="Posts | iHR4k Blog" />
-<meta name="application-name" content="Posts | iHR4k Blog" />
+<title itemprop="name">Light Probes and Ambient Occlusion | iHR4k Blog</title>
+<meta property="og:title" content="Light Probes and Ambient Occlusion | iHR4k Blog" />
+<meta name="twitter:title" content="Light Probes and Ambient Occlusion | iHR4k Blog" />
+<meta itemprop="name" content="Light Probes and Ambient Occlusion | iHR4k Blog" />
+<meta name="application-name" content="Light Probes and Ambient Occlusion | iHR4k Blog" />
 <meta property="og:site_name" content="Welcome to the personal iHR4k blog" />
 
 <meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
@@ -32,15 +32,10 @@
     
     
     
-    <link rel="first" href="/posts/" />
-    <link rel="last" href="/posts/" />
-    
-    
-    
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2024-06-09T11:10:08-0400 />
-    <meta property="article:published_time" content=2024-06-09T11:10:08-0400 />
+    <meta property="og:article:published_time" content=2024-05-07T19:58:38-0400 />
+    <meta property="article:published_time" content=2024-05-07T19:58:38-0400 />
 
     
 
@@ -50,16 +45,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "Light Probes and Ambient Occlusion",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2024-06-09",
+        "datePublished": "2024-05-07",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  465 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2024-06-09",
+        "dateModified": "2024-05-07",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -76,9 +71,7 @@
 
     
 
-    <link rel="canonical" href="https://iHR4K.github.io/posts/">
-    <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="iHR4k Blog">
-    <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="iHR4k Blog">
+    <link rel="canonical" href="https://iHR4K.github.io/posts/may2024/">
     <link href="/style.min.41175b050032d7b140ed7b503e6724d0166055787dc68ff6fb7e4d5d7b9aebf1.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -137,7 +130,7 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/posts/">
+                    <a class="menu-link active" href="/posts/">
                         Posts
                     </a>
                     
@@ -163,129 +156,49 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2024</h2>
+        <article>
+            <header class="header">
+                <h1 class="header-title">Light Probes and Ambient Occlusion</h1>
+                
+                <div class="post-meta">
+                    <time datetime="2024-05-07T19:58:38-04:00" itemprop="datePublished"> 7 May 2024 </time>
+                </div>
+            </header><div class="page-content">
+                <p><img src="/img/ao.jpg" alt=""></p>
+<p>This month was excellent in terms of new things I learned.
+Finally, for the first time in my life, I was able to precompute Ambient Occlusion atlas for my scene,
+I implemented it with Embree and Micrrosoft&rsquo;s UVAtlas, it worked like a charm,
+The algorithm is pretty easy:</p>
+<ul>
+<li>pass shapes you want to have in UV space,</li>
+<li>rasterize Atlas with texture coordinates as position in shaded and save positions and normals to the output texture
+<img src="/img/atlas.png" alt=""></li>
+<li>load shapes in Embree (beware, you have to pretransform positions, rtcSetGeometryTransform will not work as you expect)</li>
+<li>for every pixel in texture run intersection (warning - rtcOccluded1 would not work with your &ldquo;usual&rdquo; expectations, check Embree&rsquo;s demo - RTCRay wants you to set tnear and tfar as a part of the vector)</li>
+</ul>
+<p>To use new atlases I had to add static/dynamic object type, that worked but that&rsquo;s too early for me to use this as a part of the pipe,
+I am still on a really fresh API, later I probably will return to this when I want to add some GI in static objects which should be in batches - objects should be in one UV space. I definitely can make lightmaps based on this code, but that will be a little later, cause I&rsquo;m not sure I will need this in my game.</p>
+<p>This task really got me a good example of how to use graphics and compute shader + read/write and different flows,
+I definitely will be using my new expertise in the next tasks - irradiance probes and etc&hellip;</p>
+<p>Research about Mirror&rsquo;s Edge went well, most of the materials were about the remake, but that gave me good references for my future research, seems like they use extensively SH for small objects and one huge lightmap for the zone in the map.</p>
+<p>Right now I have a few ways to go and I&rsquo;m not sure which one I will choose, I have to refactor some stuff again (I believe we should refactor as much as we can, at least at the beginning, huge tails in C++ hurt more than in other modern languages).
+The first way is about lighting in the scene, I have to check how I can auto-generate probes in the scene and save them, that&rsquo;s important for SH and Irradiance caching.
+The next one is about light caching, while lightmaps are good, but I want to know how to use other techniques too.
+And the last one is about how to load/unload scenes on PC and consoles - that&rsquo;s a completely unknown place for me, but an interesting one :)</p>
+<p>I think that&rsquo;s it so far, everyone who is in search - be strong and have good luck :)</p>
+<p>Huge thanks to everyone who shared code in next repos:
+<a href="https://github.com/microsoft/UVAtlas">https://github.com/microsoft/UVAtlas</a>
+<a href="https://github.com/prideout/aobaker">https://github.com/prideout/aobaker</a>
+<a href="https://github.com/ands/lightmapper">https://github.com/ands/lightmapper</a>
+<a href="https://github.com/TheRealMJP/BakingLab">https://github.com/TheRealMJP/BakingLab</a></p>
 
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/june2024/">Global Illumination Research</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-06-09T11:10:08-0400">
-        9 Jun 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/may2024/">Light Probes and Ambient Occlusion</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-05-07T19:58:38-0400">
-        7 May 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/april2024/">Steps to probes</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-04-03T21:29:08-0400">
-        3 Apr 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/march2024/">Keep Normals Normal</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-03-05T18:25:11-0500">
-        5 Mar 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/february2024/">The first month of my new project</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-02-02T18:25:11-0500">
-        2 Feb 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/january2024/">My Sonatine</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-01-20T16:50:50-0500">
-        20 Jan 2024
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2023</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/post/">[[Blog alloc] init]</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2023-06-18T18:05:11-0400">
-        18 Jun 2023
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

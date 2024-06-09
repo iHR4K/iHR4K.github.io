@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | iHR4k Blog</title>
-<meta property="og:title" content="Posts | iHR4k Blog" />
-<meta name="twitter:title" content="Posts | iHR4k Blog" />
-<meta itemprop="name" content="Posts | iHR4k Blog" />
-<meta name="application-name" content="Posts | iHR4k Blog" />
+<title itemprop="name">Steps to probes | iHR4k Blog</title>
+<meta property="og:title" content="Steps to probes | iHR4k Blog" />
+<meta name="twitter:title" content="Steps to probes | iHR4k Blog" />
+<meta itemprop="name" content="Steps to probes | iHR4k Blog" />
+<meta name="application-name" content="Steps to probes | iHR4k Blog" />
 <meta property="og:site_name" content="Welcome to the personal iHR4k blog" />
 
 <meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
@@ -32,15 +32,10 @@
     
     
     
-    <link rel="first" href="/posts/" />
-    <link rel="last" href="/posts/" />
-    
-    
-    
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2024-06-09T11:10:08-0400 />
-    <meta property="article:published_time" content=2024-06-09T11:10:08-0400 />
+    <meta property="og:article:published_time" content=2024-04-03T21:29:08-0400 />
+    <meta property="article:published_time" content=2024-04-03T21:29:08-0400 />
 
     
 
@@ -50,16 +45,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "Steps to probes",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2024-06-09",
+        "datePublished": "2024-04-03",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  272 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2024-06-09",
+        "dateModified": "2024-04-03",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -76,9 +71,7 @@
 
     
 
-    <link rel="canonical" href="https://iHR4K.github.io/posts/">
-    <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="iHR4k Blog">
-    <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="iHR4k Blog">
+    <link rel="canonical" href="https://iHR4K.github.io/posts/april2024/">
     <link href="/style.min.41175b050032d7b140ed7b503e6724d0166055787dc68ff6fb7e4d5d7b9aebf1.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -137,7 +130,7 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/posts/">
+                    <a class="menu-link active" href="/posts/">
                         Posts
                     </a>
                     
@@ -163,129 +156,34 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2024</h2>
+        <article>
+            <header class="header">
+                <h1 class="header-title">Steps to probes</h1>
+                
+                <div class="post-meta">
+                    <time datetime="2024-04-03T21:29:08-04:00" itemprop="datePublished"> 3 Apr 2024 </time>
+                </div>
+            </header><div class="page-content">
+                <p><img src="/img/pic.png" alt=""></p>
+<p>This month was full of surprises, I never worked on big scenes so reflection probes were a little difficult at first from the how-to-work/update standpoint, but at some point that went well,
+So I was able to add runtime probes and store them in the cache, later I added them to the calculation of the irradiance map by Karis, and I fully implemented his article, really interesting how that&rsquo;s pretty clear hwo to work with them in the viewer, but the bigger scene is full of surprises, like parallax, interpolation, etc.
+I used Computer Shaders for probes readback implementation.
+In the end I used DirectXTex, to store cached texture files.
+Now a new wave of refactoring awaits me because I integrated cubemaps in a hacky way.</p>
+<p><strong>Mirror&rsquo;s Edge research</strong>
+I have started my research about Mirror&rsquo;s Edge, and I think this game has amazing technical and artistic sides.
+Can recommend checking this talk - Fabien Christin Lighting Mirror&rsquo;s Edge Catalyst (<a href="https://www.gdcvault.com/play/1023284/Lighting-the-City-of-Glass)">https://www.gdcvault.com/play/1023284/Lighting-the-City-of-Glass)</a>. Seems like they used a pretty old but good solution - light maps for big objects and SH for small, so I will go in the same direction.</p>
+<p>So next steps I want to refactor the Editor&rsquo;s code to something reusable, so I can easily add new renderers w/o working with heaps.
+That will be my next step - I already know how to implement SH, but lightmaps could be tricky, maybe next time I will share some useful details.</p>
+<p><strong>PS</strong>: I got a really interesting bug when everything seemed right but only the poles of the sphere were wrong, I rechecked everything, the problem was in 2.0<em>PI+Xi.x. Should be 2</em>PI*Xi.x</p>
 
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/june2024/">Global Illumination Research</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-06-09T11:10:08-0400">
-        9 Jun 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/may2024/">Light Probes and Ambient Occlusion</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-05-07T19:58:38-0400">
-        7 May 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/april2024/">Steps to probes</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-04-03T21:29:08-0400">
-        3 Apr 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/march2024/">Keep Normals Normal</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-03-05T18:25:11-0500">
-        5 Mar 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/february2024/">The first month of my new project</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-02-02T18:25:11-0500">
-        2 Feb 2024
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/january2024/">My Sonatine</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2024-01-20T16:50:50-0500">
-        20 Jan 2024
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2023</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/post/">[[Blog alloc] init]</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2023-06-18T18:05:11-0400">
-        18 Jun 2023
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

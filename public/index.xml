@@ -6,7 +6,57 @@
     <description>Recent content on iHR4k Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jan 2024 16:50:50 -0500</lastBuildDate><atom:link href="https://iHR4K.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jun 2024 11:10:08 -0400</lastBuildDate><atom:link href="https://iHR4K.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Global Illumination Research</title>
+      <link>https://iHR4K.github.io/posts/june2024/</link>
+      <pubDate>Sun, 09 Jun 2024 11:10:08 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/june2024/</guid>
+      <description>I have never worked with GI algorithms, and that&amp;rsquo;s a new huge world for me. And I liked it, by the way, that&amp;rsquo;s really huge world. So I started with a few different roads: Spherical Harmonics, Ray Tracing and Irradiance Fields. Probe generation was a little new field either, after the first look at the GDC talk from Remedy, I thought I would need voxels, but it turned out I could go with simple discretization of the space.</description>
+    </item>
+    
+    <item>
+      <title>Light Probes and Ambient Occlusion</title>
+      <link>https://iHR4K.github.io/posts/may2024/</link>
+      <pubDate>Tue, 07 May 2024 19:58:38 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/may2024/</guid>
+      <description>This month was excellent in terms of new things I learned. Finally, for the first time in my life, I was able to precompute Ambient Occlusion atlas for my scene, I implemented it with Embree and Micrrosoft&amp;rsquo;s UVAtlas, it worked like a charm, The algorithm is pretty easy:
+pass shapes you want to have in UV space, rasterize Atlas with texture coordinates as position in shaded and save positions and normals to the output texture load shapes in Embree (beware, you have to pretransform positions, rtcSetGeometryTransform will not work as you expect) for every pixel in texture run intersection (warning - rtcOccluded1 would not work with your &amp;ldquo;usual&amp;rdquo; expectations, check Embree&amp;rsquo;s demo - RTCRay wants you to set tnear and tfar as a part of the vector) To use new atlases I had to add static/dynamic object type, that worked but that&amp;rsquo;s too early for me to use this as a part of the pipe, I am still on a really fresh API, later I probably will return to this when I want to add some GI in static objects which should be in batches - objects should be in one UV space.</description>
+    </item>
+    
+    <item>
+      <title>Steps to probes</title>
+      <link>https://iHR4K.github.io/posts/april2024/</link>
+      <pubDate>Wed, 03 Apr 2024 21:29:08 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/april2024/</guid>
+      <description>This month was full of surprises, I never worked on big scenes so reflection probes were a little difficult at first from the how-to-work/update standpoint, but at some point that went well, So I was able to add runtime probes and store them in the cache, later I added them to the calculation of the irradiance map by Karis, and I fully implemented his article, really interesting how that&amp;rsquo;s pretty clear hwo to work with them in the viewer, but the bigger scene is full of surprises, like parallax, interpolation, etc.</description>
+    </item>
+    
+    <item>
+      <title>Keep Normals Normal</title>
+      <link>https://iHR4K.github.io/posts/march2024/</link>
+      <pubDate>Tue, 05 Mar 2024 18:25:11 -0500</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/march2024/</guid>
+      <description>Small reflection on this month, not so bad, I spent some time starting implementing shape lists, textures reading, and converting to DDS, I was able to load Sponza and curtains from the additional scene, later I added the opportunity to move elements and scenes and save the scene and all caches I have for materials, shapes, etc, reading my own format much faster, so that&amp;rsquo;s the experience I was looking for.</description>
+    </item>
+    
+    <item>
+      <title>The first month of my new project</title>
+      <link>https://iHR4K.github.io/posts/february2024/</link>
+      <pubDate>Fri, 02 Feb 2024 18:25:11 -0500</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/february2024/</guid>
+      <description>So to be honest that&amp;rsquo;s 3 weeks :)
+That went well, I have got some basic stuff on fake data:
+I added Assimp for model loading, no materials for now that&amp;rsquo;s for the next month.
+Buffers creation is implemented in naive way and basic rendering w/o materials but with a special indirect buffer for them, so I have only color there now.
+Node and transform systems: I added some prepared buffers with hardcoded count, right now 128, and I can add more later if I would need, anyway I really loved idea of handles, here is the</description>
+    </item>
+    
     <item>
       <title>My Sonatine</title>
       <link>https://iHR4K.github.io/posts/january2024/</link>
