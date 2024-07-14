@@ -76,5 +76,14 @@ It feels like my sonatine was a few weeks ago - it was nothing special, I just w
       <description></description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://iHR4K.github.io/posts/july2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/july2024/</guid>
+      <description>Sorry, it&amp;rsquo;s slightly late because I was sick, by the way finally I swept another page in my rendering life :) At the beginning of June, I started moving my RT code to Editor, and when I completed it I realized how bad it looks, so I wanted to find the reason and started digging in. To be sure I draw everything correctly I implemented that famous &amp;ldquo;RT in one weekend&amp;rdquo;.</description>
+    </item>
+    
   </channel>
 </rss>
