@@ -6,7 +6,16 @@
     <description>Recent content on iHR4k Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jul 2024 17:38:54 -0400</lastBuildDate><atom:link href="https://iHR4K.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Aug 2024 10:25:35 -0400</lastBuildDate><atom:link href="https://iHR4K.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Irradiance Volumes</title>
+      <link>https://iHR4K.github.io/posts/august2024/</link>
+      <pubDate>Sat, 03 Aug 2024 10:25:35 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/august2024/</guid>
+      <description>I want to reset dates for my future posts, so here are the 2 weeks of my work. I began the Irradiance Volumes implementation and almost immediately I got the issue which took ~3 weeks to understand. When you don&amp;rsquo;t know exactly where the issue is you have to find a way to test everything on the GPU side, starting with input data like normals and finishing with checking every aspect of weight in calculations.</description>
+    </item>
+    
     <item>
       <title>Moving to advanced baking algorithms</title>
       <link>https://iHR4K.github.io/posts/july2024/</link>
