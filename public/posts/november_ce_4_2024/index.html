@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">CryEngine - ECStasy - Part 2 | iHR4k Blog</title>
+<meta property="og:title" content="CryEngine - ECStasy - Part 2 | iHR4k Blog" />
+<meta name="twitter:title" content="CryEngine - ECStasy - Part 2 | iHR4k Blog" />
+<meta itemprop="name" content="CryEngine - ECStasy - Part 2 | iHR4k Blog" />
+<meta name="application-name" content="CryEngine - ECStasy - Part 2 | iHR4k Blog" />
+<meta property="og:site_name" content="Welcome to the personal iHR4k blog" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+  <meta itemprop="image" content="https://iHR4K.github.io/" />
+  <meta property="og:image" content="https://iHR4K.github.io/" />
+  <meta name="twitter:image" content="https://iHR4K.github.io/" />
+  <meta name="twitter:image:src" content="https://iHR4K.github.io/" />
+
+
+
+
+    
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2024-11-26T09:47:34-0500 />
+    <meta property="article:published_time" content=2024-11-26T09:47:34-0500 />
+
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "CryEngine - ECStasy - Part 2",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2024-11-26",
+        "description": "",
+        "wordCount":  1360 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2024-11-26",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "iHR4k Blog"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.113.0">
+
+    
+
+    <link rel="canonical" href="https://iHR4K.github.io/posts/november_ce_4_2024/">
+    <link href="/style.min.41175b050032d7b140ed7b503e6724d0166055787dc68ff6fb7e4d5d7b9aebf1.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://iHR4K.github.io/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    </head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://iHR4K.github.io/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">CryEngine - ECStasy - Part 2</h1>
+                
+                <div class="post-meta">
+                    <time datetime="2024-11-26T09:47:34-05:00" itemprop="datePublished"> 26 Nov 2024 </time>
+                </div>
+            </header><div class="page-content">
+                <p>Let&rsquo;s take a look at the Entity class. When CE creates a new one, it receives Entity class and Archetype in the PreInit call, this call also will create Proxy if needed (the call will take it from the Class). The next call is the Init, inside it casts Class to <em>CEntityClass</em>, and tries to serialize if XML exists. Serialize will call LoadComponent. <em>CEntity</em> has CreateProxy method which can create different components like <em>CEntityComponentAudio, CEntityComponentArea, CEntityComponentCamera</em> etc</p>
+<p><img src="/img/november-ce/01.jpg" alt=""></p>
+<p>This class also has a few handy methods like:</p>
+<p><em>AddComponent</em>—The call will check <em>Class</em> desc from passed params. If desc is null, the method will try to get the factory for the component. Finally, we have the <em>AddComponentInternal</em> call with different parameters.</p>
+<p><img src="/img/november-ce/02.jpg" alt=""></p>
+<p><em>CEntity</em> holds the pointer to the <em>CEntityRender</em> (we will take a look on this class later), and has some public proxy calls like LoadGeometry, LoadCharacter, and LoadLight. They will call the same methods on the <em>CEntityRender</em> pointer.</p>
+<p>Let&rsquo;s step out and check who controls Entities—<em>CEntityLoadManager</em>. This class uses <em>EntityPool</em>, which is the vector of units. <em>LoadEntites</em> is the first interesting call.</p>
+<p>It&rsquo;s getting XML as an argument, and will reserve the entities&rsquo; ids - simple iteration on the XML and parsing the id - if the id and tag are valid - we ask IEntitySystem to reserve the id. Next CE starts batch creation - the code is really self-explanatory</p>
+<p><img src="/img/november-ce/03.jpg" alt=""></p>
+<p><img src="/img/november-ce/04.jpg" alt=""></p>
+<p>Let&rsquo;s take a look at <em>ParseEntities</em>. It reserves <em>StaticEntity</em> ids with the g_pIEntitySystem-&gt;ReserveStaticEntityIds call. We have counted from XML. Next, CE iterates on the XML children. If the node exists and the tag is valid, CE tries to parse the XML. If it gets success, the call will try to extract <em>LoadParams</em> with the ExtractEntityLoadParams call. We will put this data into <em>loadParameterStorage</em>.</p>
+<p>Out of the iteration, CE reserves memory in the pool and will iterate on loadParameterStorage instances. Finally, we have a <em>CreateEntity</em> call.</p>
+<p>Step inside to the <em>CreateEntity</em> call.</p>
+<p>The first call we have is g_pIEntitySystem-&gt;SpawnPreallocatedEntity. Next, we are trying to restore components by the XML. That&rsquo;s pretty generic code the interesting thing here is the pSpawnedEntity-&gt;LoadCharacter or LoadGeometry calls.</p>
+<p>Let&rsquo;s check the Archetype.</p>
+<p>First, we want to check the <em>CEntityArchetype</em>. The constructor gets the <em>IEntityClass</em>, and will try to get <em>CEntityScript</em>, if it exists we will try to load it (Lua interactions).</p>
+<p><img src="/img/november-ce/05.jpg" alt=""></p>
+<p>That&rsquo;s a pretty basic class  - it has its own methods to load itself.</p>
+<p>Now we want to check <em>CEntityArchetypeManager</em> - this class has a <em>CreateArchetype</em> call, it gets <em>Class</em> and archetype name, and the manager has a cache for types. The call will try to create a new CEntityArchetype instance <em>if</em> we don&rsquo;t have n in the cache. For this, we have to cast the class to <em>CEntityClass</em> and pass it to the constructor. Another interesting call is the <em>LoadArchetype</em> with type name as argument. This call checks if we have loaded the library for the passed archetype name. If no - CE is trying to load the library for the given archetype name.</p>
+<p><em>LoadLibrary</em> is pretty straightforward - load XML by the library name (CE constructs it from the archetype name). Get the <em>СlassRegistry</em> from g_pIEntitySystem. Next CE will be iterating on the XML, will try to extract the Name and Class, check if it&rsquo;s in the registry, and will create a new archetype withthe  <em>CreateArchetype</em> call. And will add the library to the cache at the end of the call.</p>
+<p><img src="/img/november-ce/06.jpg" alt=""></p>
+<p>Let&rsquo;s check the new discovery - <em>CEntityClassRegistry</em>. It has a few interesting calls, let&rsquo;s check the first one <em>RegisterEntityClass</em>. It gets the Class as an argument and will be storing the class in the map by the guid. <em>FindClass</em>/<em>FindClassByGUID</em> - simple search. <em>RegisterStdClass</em> will create a new <em>CEntityClass</em> instance, if passed as an argument descriptor have the script file - CE will load the <em>CEntityScript</em> and will set it to the <em>CEntityClass</em> instance. At the end, we have a <em>RegisterEntityClass</em> call.</p>
+<p>Last interesting call here - <em>InitializeDefaultClasses</em>.</p>
+<p><img src="/img/november-ce/07.jpg" alt=""></p>
+<p>We observed 2 more classes - <em>CEntityClass</em> and <em>CEntityScript</em>. Let&rsquo;s start with the first one.</p>
+<p>The first method that takes our attention in <em>CEntityClass</em> is the <em>LoadScript</em>. If the <em>CEntityScript</em> member is not null CE will try to load the script. Seems like <em>CEntityScript</em> is optional, so there exists a <em>SetEntityScript</em> call. The class also has <em>GetEventInfo</em> call, which will extract the vent from the <em>CEntityScript</em> member.</p>
+<p>And seems like all ways coming to the <em>CEntityScript</em>. The main initialization in the Init call. It has 2 versions - one with only names for table and scriptfile, second allow you to pass the table object. Also this version will delegate properties to this table and will create another table for properties.</p>
+<p>Another interesting method is the <em>LoadScript</em>. It will try to execute file by the filename you passed before. will delegate properties and will call the EnumStates.</p>
+<p><em>EnumStates</em> wil lconnect al lstates Lua has, so seems like connections to some state machine from Lua. At the end every stated get callback from Lua in the InitializeStateTable. You will see these calls later when we will be researching the <em>CEntityComponentLuaScript</em></p>
+<p><img src="/img/november-ce/08.jpg" alt=""></p>
+<p>With all this knowledge let&rsquo;s review the <em>CreateProxy</em> method in the <em>CEntity</em> class.</p>
+<p><em>CEntityComponentAudio</em> is the simplest one, Initialize method will extract and will change the name. After that we have <em>CreateObject(SCreateObjectData)</em> on pAudioSystem pointer. Another interesting method is the <em>ProcessEvent</em>. It will parse the event type and will notify about it.</p>
+<p><img src="/img/november-ce/09.jpg" alt=""></p>
+<p><em>CEntityComponentCamera</em> is another interesting but marked as a legacy component, <em>UpdateMaterialCamera</em> is probably the most interesting call here.</p>
+<p><img src="/img/november-ce/10.jpg" alt=""></p>
+<p><em>CEntityRender</em> is the class <em>CEntity</em> holds, we still have not reviewed it, so let&rsquo;s fix this. By the comment, this class contains multiple subobjects within the slots. A few interesting methods here - <em>AllocSlot(index)</em> - resize + new slot if no space, <em>IsRendered</em> flag - will ask slots to determine the value, <em>SetSlotLocalTM</em>, <em>UpdateRenderNodes</em> - proxy to slot, <em>SetSlotGeometry</em>(index) - pass to slot.</p>
+<p>Another good example - <em>LoadGeometry(index, name).</em> It will try to create the slot if it doesn&rsquo;t exist, Will load the <em>Object</em> for the filename with the <em>I3DEngine</em> global variable. And will call <em>SetSlotGeometry</em>.</p>
+<p>Next is <em>LoadCharacter</em> - pretty similar to the method above but data from <em>ICharacterManager</em>. At the end, we have SetSlotCharacter call.</p>
+<p>This class has a few similar calls like <em>SetSlotGeometry</em>, <em>SetSlotCharacter</em>, <em>SetParticleEmitter</em>, <em>LoadParticleEmitter</em>, <em>LoadLight</em>, <em>LoadCloudBlocker</em>, <em>LoadFogVolume</em>, <em>LoadGeomCache</em>&hellip;</p>
+<p>They are all pretty similar - <em>GetOrMakeSlot</em>, <em>slot-&gt;SetRenderNode()</em> <em>ComputeBounds</em>, and <em>SendEvent(ENTITY_EVENT_SLOT_CHANGED).</em></p>
+<p>The final class in this hierarchy is the <em>CEntitySlot</em>, let&rsquo;s check it, as the comment suggests - defines a particular geometry object or character inside the entity.</p>
+<p>The constructor takes the <em>CEntity</em> pointer, it has a <em>ReleaseObjects</em> call - cleanup of object vars and also call to <em>p3DEngine</em> to delete <em>RenderNode</em>. <em>UpdateRenderNode</em> - it will try to update some flags and will try to insert node to octree with p3DEngine-&gt;RegisterEntity call.</p>
+<p>Another interesting call - SetAsLight. CE creates the <em>RenderNode</em> with gEnv-&gt;p3DEngine-&gt;CreateLightSource(). will cast it to <em>ILightSource</em>. And will set light properties.</p>
+<p>The last Script we will check is the <em>CEntityComponentLuaScript</em>, it stores a pointer to <em>CEntityScript</em>. This class also can create <em>ScriptTable</em>, this class is interesting because it shows some internal Lua work, for example, it works directly with &ldquo;<em>__this</em>&rdquo; and to <em>ScriptHandle</em> as well as &ldquo;id&rdquo; and &ldquo;class&rdquo;. This class has an Update call, but it checks the time difference, if we have enough span - we call <em>CallStateFunction</em> on the <em>CEntityScript</em> object.</p>
+<p><img src="/img/november-ce/11.jpg" alt=""></p>
+<p>So the <em>ProcessEvent</em> is the most interesting method here, with respect to the type of the event we redirect calls to the <em>CEntityScript</em>, so the call takes <em>CurrentState</em>, <em>ScriptTable</em>, and <em>ScriptStateType</em></p>
+<p><img src="/img/november-ce/11.jpg" alt=""></p>
+<p><em>GoToState</em> is an interesting example of Lua interactions in CE. It calls <em>CallStateFunction</em> with <em>ScriptState_OnEndState</em>. Sends the event with ENTITY_EVENT_LEAVE_SCRIPT_STATE. Calls the <em>CallStateFunction</em> with <em>ScriptState_OnBeginState</em>. Checks if the current state has an Update method with CurrentState()-&gt;IsStateFunctionImplemented(ScriptState_OnUpdate) call. And finally sends the event with ENTITY_EVENT_ENTER_SCRIPT_STATE.</p>
+<p>Some additional helpers exist like:</p>
+<p><em>IsInState(name)</em> - it will calls the <em>CEntityScript-&gt;GetStateId()</em></p>
+<p><em>SetEventTargets(XML)</em> - will connect source targets with event targets</p>
+<p>Family of public <em>CallEvent</em> calls - simple proxy to the <em>CEntityScript</em>.</p>
+<p><em>OnCollision</em> - it&rsquo;s interesting because it works with physics.</p>
+<p>And the SetPhysParams. Proxy to the g_pIEntitySystem-&gt;GetScriptBindEntity()-&gt;SetEntityPhysicParams.</p>
+<p>That&rsquo;s it for this side of the hierarchy, I hope you found this useful.</p>
+<p>Good luck.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://twitter.com/iHR4K" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="https://github.com/iHR4K" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/sergei-newcastle/" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 Sergei.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
+        theme on
+        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script src="https://iHR4K.github.io/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>

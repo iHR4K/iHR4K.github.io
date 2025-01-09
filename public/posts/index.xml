@@ -6,7 +6,64 @@
     <description>Recent content in Posts on iHR4k Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Aug 2024 10:25:35 -0400</lastBuildDate><atom:link href="https://iHR4K.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Nov 2024 09:47:34 -0500</lastBuildDate><atom:link href="https://iHR4K.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CryEngine - ECStasy - Part 2</title>
+      <link>https://iHR4K.github.io/posts/november_ce_4_2024/</link>
+      <pubDate>Tue, 26 Nov 2024 09:47:34 -0500</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/november_ce_4_2024/</guid>
+      <description>Let&amp;rsquo;s take a look at the Entity class. When CE creates a new one, it receives Entity class and Archetype in the PreInit call, this call also will create Proxy if needed (the call will take it from the Class). The next call is the Init, inside it casts Class to CEntityClass, and tries to serialize if XML exists. Serialize will call LoadComponent. CEntity has CreateProxy method which can create different components like CEntityComponentAudio, CEntityComponentArea, CEntityComponentCamera etc</description>
+    </item>
+    
+    <item>
+      <title>CryEngine - ECStasy - Part 1</title>
+      <link>https://iHR4K.github.io/posts/october_ce_3_2024/</link>
+      <pubDate>Sat, 19 Oct 2024 17:47:26 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/october_ce_3_2024/</guid>
+      <description>A little later but here is the continue of the CRYENGINE research. Next we are going to check IScryptSystem, this interface has a few methods, and also CScriptSystem module is implementing this interface. So at runtime, we load DLL.
+This module works with Lua, that&amp;rsquo;s a really interesting implementation I will try to explain some details, but the explanation for now would not be complete, because the actual implementation works with at least 3 modules, but we have to start somewhere.</description>
+    </item>
+    
+    <item>
+      <title>CryEngine - Please Present My Mesh</title>
+      <link>https://iHR4K.github.io/posts/october_ce_2_2024/</link>
+      <pubDate>Tue, 08 Oct 2024 16:05:28 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/october_ce_2_2024/</guid>
+      <description>In the last part, we briefly checked the initialization of the CryEngine, today we want to check how we can submit something to the renderer from the engine.
+As mentioned before, RenderView is the main class that presents something from the camera view, and we expect to see the main logic (behavior) there. And we will be right. All rendering logic (behavior) is built on the top of three classes - CRenderItemDrawer, child of CGraphicsPipeline and CSceneRenderPass.</description>
+    </item>
+    
+    <item>
+      <title>CryEngine - The Light I Have Missed</title>
+      <link>https://iHR4K.github.io/posts/october_ce_1_2024/</link>
+      <pubDate>Mon, 07 Oct 2024 16:36:49 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/october_ce_1_2024/</guid>
+      <description>In the recent iteration of my game, I finished one render technique, and the ECS question was raised, that&amp;rsquo;s time to add some logic to the scene. So immediately I found some information, but everything had lack of the full picture. CRYTEK allows you to get access to source code for free, so I used my chance to gain some knowledge above the theoretical level, and this week I will be trying to post one post after a day of research.</description>
+    </item>
+    
+    <item>
+      <title>Final of Irradiance Fields</title>
+      <link>https://iHR4K.github.io/posts/october2024/</link>
+      <pubDate>Sun, 06 Oct 2024 15:20:49 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/october2024/</guid>
+      <description>Grand finale, I gained a lot of new knowledge, amazing technique, and good results (at least for me). So the one thing I can share is to pay attention to coordinate systems - the calculation of the position of the grid relies on the right coordinate system.
+So for now I want to switch to another important component - the component system :) This month I will be researching CRYENGINE to learn about real engine architecture.</description>
+    </item>
+    
+    <item>
+      <title>Irradiance Fields</title>
+      <link>https://iHR4K.github.io/posts/september2024/</link>
+      <pubDate>Sun, 08 Sep 2024 11:03:13 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/september2024/</guid>
+      <description>Irradiance Fileds is a pretty fresh approach to the real-time GI, I wanted to implement it for quite a long time and finally, I came to that point. So while the main algorithm is really simple, implementation can bit tricky at some points, also if you never worked with a few things like octohedral encode/decode or DirectX Ray Tracing. You have 2 options to start - one with a simple implementation of the update routine, when you compute everything for every probe, or you can go with another implementation from a late Majercik article (also don&amp;rsquo;t be like me - always check publications supplement materials, I have not checked and spent a lot of time on some utils implementation, but Majercik provide almost everything in zip archive https://jcgt.</description>
+    </item>
+    
     <item>
       <title>Irradiance Volumes</title>
       <link>https://iHR4K.github.io/posts/august2024/</link>
