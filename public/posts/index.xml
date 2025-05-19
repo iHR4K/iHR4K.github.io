@@ -6,7 +6,37 @@
     <description>Recent content in Posts on iHR4k Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Nov 2024 09:47:34 -0500</lastBuildDate><atom:link href="https://iHR4K.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 May 2025 18:21:01 -0400</lastBuildDate><atom:link href="https://iHR4K.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My plugin baby</title>
+      <link>https://iHR4K.github.io/posts/may2025/</link>
+      <pubDate>Mon, 19 May 2025 18:21:01 -0400</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/may2025/</guid>
+      <description>My Plugin Baby Attention: that&amp;rsquo;s against the law to read further w/o listening this song :)
+https://www.youtube.com/watch?v=dbB-mICjkQM&amp;amp;ab_channel=Muse
+So, this time, we are going to see how the gods from Crytek implemented the plugin system to extend the engine and allow seamless upgrades.
+The article is accompanied by the source code I grabbed from the engine and isolated to the small learning app—all rights reserved by Crytek. Let&amp;rsquo;s just learn some stuff and not break the law.</description>
+    </item>
+    
+    <item>
+      <title>One year anniversary</title>
+      <link>https://iHR4K.github.io/posts/feb2025/</link>
+      <pubDate>Sun, 09 Feb 2025 17:15:05 -0500</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/feb2025/</guid>
+      <description>One year has passed, it was a really interesting year with good and sad moments. Last month I was working on the architecture of the engine, I made it based on the Lua script, and that&amp;rsquo;s really interesting how different is the point of view when CPP does nothing but only respond to the calls, That turned into a completely different prefabs/assets loading system and different renderer. Also, I added Bullet Physics, that&amp;rsquo;s pretty easy - just don&amp;rsquo;t forget to reactivate bodies - they can go to sleep.</description>
+    </item>
+    
+    <item>
+      <title>The Beginning of the New Year</title>
+      <link>https://iHR4K.github.io/posts/jan2025/</link>
+      <pubDate>Thu, 09 Jan 2025 17:01:08 -0500</pubDate>
+      
+      <guid>https://iHR4K.github.io/posts/jan2025/</guid>
+      <description>In recent weeks it was hard to find the time to make a blog post. I had a dream - making games in US, and spent ~10 years to achieve it, sadly I have only an L1 visa, which I should extend, and a corporate lawyer told me there is a chance that the US would not extend it. That was pretty sad news for me. I live in Orlando and visited this place so often, there is some energy, still hoping everything is going to be fine.</description>
+    </item>
+    
     <item>
       <title>CryEngine - ECStasy - Part 2</title>
       <link>https://iHR4K.github.io/posts/november_ce_4_2024/</link>
